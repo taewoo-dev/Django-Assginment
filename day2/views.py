@@ -14,4 +14,8 @@ def todo_list(request):
 
 
 def todo_info(request, todo_id):
-    return render(request, 'day2/todo_info.html')
+    todo_info = Todo.objects.get(id=todo_id)
+    context = {
+        "todo_info": todo_info,
+    }
+    return render(request, 'day2/todo_info.html', context)
