@@ -11,7 +11,7 @@
     <h1>UserList</h1>
     {% for user_id, user_info in user_list.items %}
         <h1>
-            <a href="/users/{{ user_id }}">{{ user_info.이름 }}</a>
+            <a href={% url 'user_info' user_id %}>{{ user_info.이름 }}</a>
         </h1>
         <br>
     {% endfor %}

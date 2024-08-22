@@ -10,7 +10,7 @@ def user_list(request):
     context = {
         "user_list": user
     }
-    return render(request, "user_list.html", context)
+    return render(request, "day1/user_list.html", context)
 
 
 def user_info(request, user_id):
@@ -18,4 +18,4 @@ def user_info(request, user_id):
     context = {
         'user': user
     }
-    return render(request, "user_info.html", context)
+    return render(request, "day1/user_info.html", context)

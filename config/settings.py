@@ -40,9 +40,14 @@ DJANGO_APPS = [
 
 OWN_APPS = [
     'day1',
+    'day2',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + OWN_APPS
+THIRD_PARTY_APPS = [
+    'django_extensions',
+]
+
+INSTALLED_APPS = DJANGO_APPS + OWN_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
