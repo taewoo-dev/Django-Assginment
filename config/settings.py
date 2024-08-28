@@ -42,6 +42,7 @@ OWN_APPS = [
     "day1",
     "day2",
     "users",
+    "day5",
 ]
 
 THIRD_PARTY_APPS = [
@@ -137,5 +138,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 ## 하 ... static한 경로와 url name을 구분을 못한다.
 LOGIN_URL = "login"
-LOGIN_REDIRECT_URL = "todo_list"
+LOGIN_REDIRECT_URL = "cbv_todo_list"
 LOGOUT_REDIRECT_URL = "login"
