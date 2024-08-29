@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from day2.models import Todo
+from day2.models import Todo, Comment
 
 
 # Register your models here.
@@ -8,3 +8,7 @@ from day2.models import Todo
 class TodoAdmin(admin.ModelAdmin):
     pass
 
+
+@admin.register(Comment)
+class Admin(admin.ModelAdmin):
+    pass
